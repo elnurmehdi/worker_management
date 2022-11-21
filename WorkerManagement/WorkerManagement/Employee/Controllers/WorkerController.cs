@@ -16,6 +16,7 @@ namespace WorkerManagement.Employee.Controllers
 
 
             var model = dataContext.Workers
+                .Where(e => e.IsDeleted==false)
                 .Select(e => new ListViewModel(e.EmployeeCode, e.FirstName, e.LastName, e.FatherName, e.IsDeleted))
                 .ToList();
 
