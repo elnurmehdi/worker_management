@@ -9,11 +9,11 @@
 
         public string LastName { get; set; }
 
-        public string Fathername { get; set; }
+        public string FatherName { get; set; }
 
         public string Email { get; set; }
 
-        public string Fin { get; set; }
+        public string FIN { get; set; }
 
         public bool IsDeleted { get; set; }
 
